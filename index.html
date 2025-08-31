@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anas Mohamed Ahmed| Portfolio - Complete Implementation</title>
+    <title>Anas Mohamed Ahmed | Creative Designer & Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -195,7 +195,27 @@
             transform: perspective(1000px) rotateY(0deg);
         }
         
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
         /* Skills Section */
+        .skills .row > div {
+            margin-bottom: 40px;
+        }
+        
+        .skill-category {
+            margin-bottom: 30px;
+        }
+        
+        .skill-category h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
         .skill-item {
             margin-bottom: 25px;
         }
@@ -284,6 +304,7 @@
             height: 100%;
             object-fit: cover;
             transition: all 0.5s ease;
+            loading: lazy;
         }
         
         .portfolio-overlay {
@@ -374,6 +395,39 @@
             transform: translateY(-5px);
         }
         
+        #visit-count {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 10px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-bg {
+                width: 100%;
+                opacity: 0.1;
+            }
+            
+            .about-img {
+                margin-bottom: 30px;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                height: 250px;
+            }
+            
+            .skills .row > div {
+                margin-bottom: 20px;
+            }
+        }
+
         /* Backend Integration Demo */
         .backend-demo {
             background: var(--bg-secondary);
@@ -411,76 +465,6 @@
             color: var(--primary);
             margin-bottom: 15px;
         }
-
-        /* Implementation Guide */
-        .guide-container {
-            background: var(--bg-secondary);
-            border-radius: 15px;
-            padding: 30px;
-            margin-top: 50px;
-            border: 1px solid var(--border-color);
-        }
-
-        .guide-step {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .guide-step:last-child {
-            border-bottom: none;
-        }
-
-        .step-number {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: var(--primary);
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-
-        code {
-            background: var(--bg-primary);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
-            border: 1px solid var(--border-color);
-        }
-
-        pre {
-            background: var(--bg-primary);
-            padding: 15px;
-            border-radius: 8px;
-            overflow-x: auto;
-            border: 1px solid var(--border-color);
-            margin-top: 10px;
-        }
-
-        /* Responsive */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-bg {
-                width: 100%;
-                opacity: 0.1;
-            }
-            
-            .about-img {
-                margin-bottom: 30px;
-                transform: none;
-            }
-
-            .deployment-option {
-                width: 100%;
-            }
-        }
     </style>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -495,7 +479,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Anas Mohamed</a>
+            <a class="navbar-brand" href="#">Anas Mohamed Ahmed</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -518,9 +502,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#implementation">Implementation</a>
                     </li>
                     <li class="nav-item ms-2">
                         <div class="theme-toggle">
@@ -548,7 +529,7 @@
                 <div class="col-lg-5 d-none d-lg-block">
                     <div class="floating">
                         <div class="about-img">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'><rect width='500' height='400' fill='%234a44c9' rx='20' ry='20'/><circle cx='250' cy='150' r='80' fill='%236c63ff'/><rect x='150' y='250' width='200' height='30' fill='%23f5f5f7' rx='5' ry='5'/><rect x='180' y='300' width='140' height='20' fill='%236c63ff' rx='5' ry='5'/></svg>" alt="Profile Image" class="img-fluid">
+                            <img src="anas.png" alt="Profile Image" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -563,7 +544,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'><rect width='500' height='400' fill='%232a2a4a' rx='20' ry='20'/><circle cx='250' cy='150' r='80' fill='%236c63ff'/><rect x='150' y='250' width='200' height='30' fill='%23f5f5f7' rx='5' ry='5'/><rect x='180' y='300' width='140' height='20' fill='%236c63ff' rx='5' ry='5'/></svg>" alt="About Me" class="img-fluid">
+                        <img src="anas.png" alt="Anas Mohamed Ahmed">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -573,21 +554,21 @@
                     <div class="row mt-5">
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li class="mb-2"><strong>Name:</strong> John Anderson</li>
-                                <li class="mb-2"><strong>Email:</strong> john@anderson-designs.com</li>
-                                <li class="mb-2"><strong>Phone:</strong> +1 (234) 567-8901</li>
+                                <li class="mb-2"><strong>Name:</strong> Anas Mohamed Ahmed</li>
+                                <li class="mb-2"><strong>Email:</strong> anassiyad89@gmail.com</li>
+                                <li class="mb-2"><strong>Phone:</strong> (+252)611162384</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Services:</strong> Design, Development, Photography</li>
                                 <li class="mb-2"><strong>Freelance:</strong> Available</li>
-                                <li class="mb-2"><strong>Location:</strong> New York, USA</li>
+                                <li class="mb-2"><strong>Location:</strong> Your Location</li>
                             </ul>
                         </div>
                     </div>
                     <div class="mt-4">
-                        <a href="#" class="btn btn-primary me-2">Download CV</a>
+                        <a href="Coursera 5KE54TNPICS0.pdf" download class="btn btn-primary me-2"><i class="fas fa-file-pdf me-2"></i>Download CV</a>
                         <a href="#contact" class="btn btn-outline-primary">Hire Me</a>
                     </div>
                 </div>
@@ -601,60 +582,150 @@
             <h2 class="section-title">My Skills</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>UI/UX Design</span>
-                            <span>95%</span>
+                    <div class="skill-category">
+                        <h4>Front-End</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="95%"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Web Development</span>
-                            <span>90%</span>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Bootstrap</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Graphic Design</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Next.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Photography</span>
-                            <span>80%</span>
+                    <div class="skill-category">
+                        <h4>Back-End</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Express.js</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>API Development</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Video Editing</span>
-                            <span>75%</span>
+                    <div class="skill-category mt-4">
+                        <h4>Other Skills</h4>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Graphic Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Advertising</span>
-                            <span>90%</span>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Photography</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Video Editing</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Advertising</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -740,51 +811,51 @@
             
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%236c63ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'>E-commerce Website</text></svg>" alt="Project 1" class="portfolio-img">
+                    <img src="images/ecommerce.jpg" alt="E-commerce Website" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <h4>E-commerce Website</h4>
                         <p>UI/UX Design, Development</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        <a href="https://your-ecommerce-demo.com" class="btn btn-primary mt-3" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="app">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%234a44c9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'>Fitness App</text></svg>" alt="Project 2" class="portfolio-img">
+                    <img src="images/fitness-app.png" alt="Fitness App" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <h4>Fitness App</h4>
                         <p>UI Design, Prototyping</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        <a href="https://your-fitness-demo.com" class="btn btn-primary mt-3" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%232a2a4a'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'>Brand Identity</text></svg>" alt="Project 3" class="portfolio-img">
+                    <img src="images/brand-identity.jpg" alt="Brand Identity" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <h4>Brand Identity</h4>
                         <p>Logo, Brand Guidelines</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        <a href="https://your-brand-demo.com" class="btn btn-primary mt-3" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="photo">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23ff6b6b'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'>Product Photography</text></svg>" alt="Project 4" class="portfolio-img">
+                    <img src="images/product-photo.jpg" alt="Product Photography" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <h4>Product Photography</h4>
                         <p>Commercial Photography</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        <a href="https://your-photo-demo.com" class="btn btn-primary mt-3" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="video">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%236c63ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'>Commercial Video</text></svg>" alt="Project 5" class="portfolio-img">
+                    <img src="images/commercial-video.jpg" alt="Commercial Video" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <h4>Commercial Video</h4>
                         <p>Video Production, Editing</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        <a href="https://your-video-demo.com" class="btn btn-primary mt-3" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
-                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><rect width='400' height='300' fill='%234a44c9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'>Ad Campaign</text></svg>" alt="Project 6" class="portfolio-img">
+                    <img src="images/ad-campaign.jpg" alt="Ad Campaign" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <h4>Ad Campaign</h4>
                         <p>Digital Advertising</p>
-                        <a href="#" class="btn btn-primary mt-3">View Project</a>
+                        <a href="https://your-ad-demo.com" class="btn btn-primary mt-3" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
@@ -801,18 +872,73 @@
                         <form id="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" placeholder="Your Name" required id="name">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                    <input type="email" class="form-control" placeholder="Your Email" required id="email">
                                 </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="Subject">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <input type="text" class="form-control" placeholder="Subject" id="subject">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required id="message"></textarea>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Integration Section -->
+    <section id="backend" class="backend">
+        <div class="container">
+            <h2 class="section-title">Backend Integration</h2>
+            <div class="backend-demo">
+                <h3 class="text-center mb-4">Form Submission Handling</h3>
+                <p class="text-center">This contact form can be connected to various backend solutions:</p>
+                
+                <div class="deployment-options">
+                    <div class="deployment-option">
+                        <i class="fab fa-node-js"></i>
+                        <h5>Node.js</h5>
+                        <p>Express server with Nodemailer</p>
+                    </div>
+                    <div class="deployment-option">
+                        <i class="fab fa-php"></i>
+                        <h5>PHP</h5>
+                        <p>Simple PHP mail script</p>
+                    </div>
+                    <div class="deployment-option">
+                        <i class="fas fa-bolt"></i>
+                        <h5>Serverless</h5>
+                        <p>AWS Lambda or Netlify Functions</p>
+                    </div>
+                    <div class="deployment-option">
+                        <i class="fas fa-server"></i>
+                        <h5>Formspree</h5>
+                        <p>Third-party form handling service</p>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h4 class="text-center mb-4">Deployment Options</h4>
+                    <div class="deployment-options">
+                        <div class="deployment-option">
+                            <i class="fab fa-react"></i>
+                            <h5>Vercel</h5>
+                            <p>Optimal for React applications</p>
+                        </div>
+                        <div class="deployment-option">
+                            <i class="fab fa-node"></i>
+                            <h5>Netlify</h5>
+                            <p>Great for static sites with functions</p>
+                        </div>
+                        <div class="deployment-option">
+                            <i class="fas fa-server"></i>
+                            <h5>Traditional Hosting</h5>
+                            <p>cPanel, FTP-based hosting</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -829,7 +955,8 @@
                 <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
             </div>
-            <p>&copy; 2023 John Anderson. All rights reserved.</p>
+            <p>&copy; 2023 Anas Mohamed Ahmed. All rights reserved.</p>
+            <p id="visit-count"></p>
         </div>
     </footer>
 
@@ -905,19 +1032,35 @@
             checkScroll(); // Initial check
         }
         
-        // Form validation and submission
+        // Form validation and submission with persistence
         function setupFormValidation() {
             const contactForm = document.getElementById('contactForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const subjectInput = document.getElementById('subject');
+            const messageInput = document.getElementById('message');
+            
+            // Load saved form data
+            nameInput.value = localStorage.getItem('form_name') || '';
+            emailInput.value = localStorage.getItem('form_email') || '';
+            subjectInput.value = localStorage.getItem('form_subject') || '';
+            messageInput.value = localStorage.getItem('form_message') || '';
+            
+            // Save form data on input
+            nameInput.addEventListener('input', () => localStorage.setItem('form_name', nameInput.value));
+            emailInput.addEventListener('input', () => localStorage.setItem('form_email', emailInput.value));
+            subjectInput.addEventListener('input', () => localStorage.setItem('form_subject', subjectInput.value));
+            messageInput.addEventListener('input', () => localStorage.setItem('form_message', messageInput.value));
             
             contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
                 // Simple validation
                 let isValid = true;
-                const inputs = contactForm.querySelectorAll('input, textarea');
+                const inputs = contactForm.querySelectorAll('input[required], textarea[required]');
                 
                 inputs.forEach(input => {
-                    if (input.hasAttribute('required') && !input.value.trim()) {
+                    if (!input.value.trim()) {
                         isValid = false;
                         input.style.borderColor = 'red';
                     } else {
@@ -931,14 +1074,15 @@
                     submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
                     submitBtn.disabled = true;
                     
-                    // In a real implementation, you would send data to your backend here
-                    // Example: 
-                    // const formData = new FormData(contactForm);
-                    // fetch('/api/contact', { method: 'POST', body: formData })
-                    
+                    // Simulate API call to backend
                     setTimeout(() => {
-                        alert('Form submitted! In a real implementation, this would connect to your backend.');
+                        alert('Message sent successfully! In a real implementation, this would connect to your backend.');
+                        // Clear form and storage on success
                         contactForm.reset();
+                        localStorage.removeItem('form_name');
+                        localStorage.removeItem('form_email');
+                        localStorage.removeItem('form_subject');
+                        localStorage.removeItem('form_message');
                         submitBtn.innerHTML = 'Send Message';
                         submitBtn.disabled = false;
                     }, 1500);
@@ -1007,6 +1151,14 @@
             });
         }
         
+        // Visit counter for "making history"
+        function setupVisitCounter() {
+            let visits = parseInt(localStorage.getItem('visits')) || 0;
+            visits++;
+            localStorage.setItem('visits', visits);
+            document.getElementById('visit-count').textContent = `Making history: You've visited this site ${visits} time${visits > 1 ? 's' : ''}!`;
+        }
+        
         // Initialize everything when the DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
             setupThemeToggle();
@@ -1016,6 +1168,7 @@
             setupNavbarScroll();
             setupSmoothScrolling();
             setup3DTiltEffect();
+            setupVisitCounter();
         });
     </script>
 </body>
